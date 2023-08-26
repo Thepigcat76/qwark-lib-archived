@@ -1,3 +1,4 @@
+import { Amogus } from "./components/amogus/amogus";
 import { Counter } from "./components/counter/counter";
 import { Logo } from "./components/logo/logo";
 
@@ -9,8 +10,10 @@ export default () => {
         <title>Qwik Blank App</title>
       </head>
       <body>
-        <Logo />
-        <Counter />
+        <Logo/>
+        <Counter/>
+        <Amogus/>
+        <Amogus/>
       </body>
     </>
   );

@@ -1,47 +1,26 @@
-# Qwik Library ⚡️
+# Qwark
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik on GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
-- [Partytown](https://partytown.builder.io/)
-- [Mitosis](https://github.com/BuilderIO/mitosis)
-- [Builder.io](https://www.builder.io/)
+- [Introduction](#introduction)
 
----
+- [Installation](#installation)
 
-## Project Structure
+- [Documentation](#documentation)
 
-Inside your project, you'll see the following directories and files:
+- [Contributors](#contributors)
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── index.ts
-```
+## Introduction
 
-- `src/components`: Recommended directory for components.
+[WIP] A qwik component library
 
-- `index.ts`: The entry point of your component library, make sure all the public components are exported from this file.
+## Installation
 
-## Development
+[WIP] Use npm
 
-Development mode uses [Vite's development server](https://vitejs.dev/). For Qwik during development, the `dev` command will also server-side render (SSR) the output. The client-side development modules are loaded by the browser.
+## Documentation
 
-```
-npm run dev
-```
+[WIP]
 
-> Note: during dev mode, Vite will request many JS files, which does not represent a Qwik production build.
+## Contributors
 
-## Production
-
-The production build should generate the production build of your component library in (./lib) and the typescript type definitions in (./lib-types).
-
-```
-npm run build
-```
+- [Thepigcat76](https://github.com/Thepigcat76)
+- [TheHackerChampion](https://github.com/TheHackerChampion)
