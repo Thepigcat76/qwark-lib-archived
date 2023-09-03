@@ -1,11 +1,24 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, $, ClassList } from "@builder.io/qwik";
+import "./amogus.css";
 
-export const Amogus = component$(() => {
-    return (
-        <div>
-            <button>
-                Amogus
-            </button>
-        </div>
-    )
+
+interface Class {
+  class: ClassList
+}
+
+export const Amogus = component$((props: Class) => {
+  const print = $(() => window.open("https://www.youtube.com/watch?v=dsHyUgGMht0"));
+
+  return (
+    <div class="amogus">
+      <button
+        onClick$={[
+          print,
+        ]}
+        class={props.class}
+      >
+        Amogus
+      </button>
+    </div>
+  );
 });

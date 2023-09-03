@@ -1,19 +1,22 @@
 import { Amogus } from "./components/amogus/amogus";
 import { Counter } from "./components/counter/counter";
 import { Logo } from "./components/logo/logo";
+import "./style.css";
+
 
 export default () => {
   return (
     <>
       <head>
         <meta charSet="utf-8" />
-        <title>Qwik Blank App</title>
+        <title>Qwark Test</title>
       </head>
       <body>
-        <Logo/>
-        <Counter/>
-        <Amogus/>
-        <Amogus/>
+        <Logo />
+        <Counter />
+        <div>
+          <Amogus class="amogus"></Amogus>
+        </div>
       </body>
     </>
   );

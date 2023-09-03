@@ -1,0 +1,22 @@
+.amogus button {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(201, 201, 201, 0.5);
+  color: black;
+  border: none;
+  border-bottom: 3px solid rgb(197, 197, 197);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+
+.amogus a {
+    text-decoration: none;
+    color: black;
+}
+
+.amogus button:hover {
+  background-color: rgba(180, 180, 180, 0.75);
+  border-bottom: 3px solid rgb(197, 197, 197);
+}
