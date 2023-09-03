@@ -15,7 +15,7 @@ export default () => {
         <Logo />
         <Counter />
         <div>
-          <Amogus class="amogus"></Amogus>
+          <Amogus class="amogus" test={"lolool"}></Amogus>
         </div>
       </body>
     </>
