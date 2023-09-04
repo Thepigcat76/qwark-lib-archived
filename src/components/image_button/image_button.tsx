@@ -15,27 +15,30 @@ interface IImageButton extends Class {
 export const ImageButton = component$((props: IImageButton) => {
   if (props.alt != null){
     return (
-      <div class="image-button">
+      <div
+      class="image-button">
         <button class={props.class}>
           <img
             width={props.img_w}
             height={props.img_h}
             alt={props.alt}
             src={props.img_src}
-            class="image-button"
+            class={props.imgClass}
           />
         </button>
       </div>
     );
   } else {
     return (
-      <div class="image-button">
+      <div
+      class="image-button">
         <button class={props.class}>
           <img
             width={props.img_w}
             height={props.img_h}
             alt={props.img_src}
             src={props.img_src}
+            class={props.imgClass}
           />
         </button>
       </div>
