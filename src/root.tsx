@@ -1,6 +1,6 @@
-import { Amogus } from "./components/amogus/amogus";
+import { FancyButton } from "./components/fancy_button/fancy_button";
 import { Counter } from "./components/counter/counter";
-import { Logo } from "./components/logo/logo";
+import { ImageButton } from "./components/image_button/image_button";
 import "./style.css";
 
 
@@ -12,10 +12,10 @@ export default () => {
         <title>Qwark Test</title>
       </head>
       <body>
-        <Logo />
+        <ImageButton img_src="src/assets/logo.jpeg" imgClass="sus-button" img_h={100} img_w={100} />
         <Counter />
         <div>
-          <Amogus class="amogus" test={"lolool"}></Amogus>
+          <FancyButton class="amogus" test={"lolool"}></FancyButton>
         </div>
       </body>
     </>

@@ -1,4 +1,4 @@
-.amogus button {
+.fancy-button button {
   display: inline-block;
   width: 100px;
   height: 40px;
@@ -11,12 +11,7 @@
   margin: 5px;
 }
 
-.amogus a {
-    text-decoration: none;
-    color: black;
-}
-
-.amogus button:hover {
+.fancy-button button:hover {
   background-color: rgba(180, 180, 180, 0.75);
-  border-bottom: 3px solid rgb(197, 197, 197);
+  border-bottom: 2px solid rgb(197, 197, 197);
 }
