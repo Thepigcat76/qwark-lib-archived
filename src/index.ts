@@ -1,3 +1,3 @@
-export { ImageButton as Logo } from "./components/image_button/image_button";
+export { ImageButton as Logo } from "./components/buttons/image-button/image_button";
 export { Counter } from "./components/counter/counter";
-export { Amogus } from "./components/fancy_button/fancy_button";
+export { Amogus } from "./components/buttons/fancy-button/fancy_button";

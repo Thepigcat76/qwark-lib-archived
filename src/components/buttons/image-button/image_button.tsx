@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import "./image_button.css";
-import { Class } from "../util";
+import { Class } from "../../util";
 
 interface IImageButton extends Class {
   imgClass?: string
-  alt?: string | null;
+  alt: string;
   borderRadius?: number
   onClick?: string;
   img_src: string;
@@ -13,10 +13,9 @@ interface IImageButton extends Class {
 }
 
 export const ImageButton = component$((props: IImageButton) => {
-  if (props.alt != null){
     return (
       <div
-      class="image-button">
+      class="image-button" style={{width: "100"}}>
         <button class={props.class}>
           <img
             width={props.img_w}
@@ -28,20 +27,5 @@ export const ImageButton = component$((props: IImageButton) => {
         </button>
       </div>
     );
-  } else {
-    return (
-      <div
-      class="image-button">
-        <button class={props.class}>
-          <img
-            width={props.img_w}
-            height={props.img_h}
-            alt={props.img_src}
-            src={props.img_src}
-            class={props.imgClass}
-          />
-        </button>
-      </div>
-    );
   }
-});
+);

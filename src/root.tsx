@@ -1,8 +1,6 @@
-import { FancyButton } from "./components/fancy_button/fancy_button";
-import { Counter } from "./components/counter/counter";
-import { ImageButton } from "./components/image_button/image_button";
+import { FancyButton } from "./components/buttons/fancy-button/fancy_button";
+import { ImageButton } from "./components/buttons/image-button/image_button";
 import "./style.css";
-
 
 export default () => {
   return (
@@ -12,12 +10,19 @@ export default () => {
         <title>Qwark Test</title>
       </head>
       <body>
-        <ImageButton img_src="src/assets/logo.jpeg" imgClass="sus-button" img_h={100} img_w={100} />
-        <Counter />
-        <div>
-          <FancyButton class="amogus" test={"lolool"}></FancyButton>
-        </div>
-      </body>
+        <ImageButton
+          img_src="src/assets/logo.jpeg"
+          alt="logo"
+          imgClass="sus-button"
+          img_h={100}
+          img_w={100}
+        />
+        <FancyButton
+          onButtonClick$={() => console.log("sussy")}
+          class="amogus"
+          text={"lolool"}
+        />
+      </body>{" "}
     </>
   );
 };
