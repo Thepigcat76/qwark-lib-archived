@@ -1,8 +1,8 @@
 import { PropFunction, component$ } from "@builder.io/qwik";
 import "./fancy_button.css";
-import { Class } from "../../util";
+import { IClass } from "../../util";
 
-interface IFancyButton extends Class {
+interface IFancyButton extends IClass {
   text: string;
   onButtonClick$?: PropFunction;
 }
@@ -10,8 +10,8 @@ interface IFancyButton extends Class {
 export const FancyButton = component$((props: IFancyButton) => {
 
   return (
-    <div class="fancy-button" onClick$={props.onButtonClick$}>
-      <button class={props.class}>{props.text}</button>
+    <div class="fancy-button">
+      <button class={props.class} onClick$={props.onButtonClick$}>{props.text}</button>
     </div>
   );
 });

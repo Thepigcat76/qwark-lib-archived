@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import "./image_button.css";
-import { Class } from "../../util";
+import { IClass } from "../../util";
 
-interface IImageButton extends Class {
+interface IImageButton extends IClass {
   imgClass?: string
   alt: string;
   borderRadius?: number
