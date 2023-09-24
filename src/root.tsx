@@ -24,7 +24,7 @@ export default () => {
           class="amogus"
           text={"lolool"}
         />
-        <MyComponent/>
+        <MyComponent test="and Thepigcat76 missed to commit"/>
       </body>{" "}
     </>
   );
